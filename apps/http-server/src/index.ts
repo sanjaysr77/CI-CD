@@ -1,17 +1,17 @@
 
 import express from "express";
-import {prisma} from "@repo/db/client";
+import { prisma } from "@repo/db/client";
 
 const app = express()
 app.use(express.json())
 
-app.get("/", (req, res) =>{
+app.get("/", (req, res) => {
     res.send("Hello World")
 })
 
-app.post("/signup", async (req, res) =>{
-    const {username, password} = req.body;
-   const user = await prisma.user.create({
+app.post("/signup", async (req, res) => {
+    const { username, password } = req.body;
+    const user = await prisma.user.create({
         data: {
             username,
             password
