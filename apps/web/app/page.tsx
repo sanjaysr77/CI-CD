@@ -3,7 +3,8 @@ export default async function Home () {
 
   return (
     <div>
-      Hello World
+      Name: Sanjay <br />
+      Age: 21
     </div>
   )
 }
