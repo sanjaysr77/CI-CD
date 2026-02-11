@@ -4,7 +4,7 @@ export default async function Home () {
   return (
     <div>
       Name: Sanjay <br />
-      Age: 21
+      Age: 22
     </div>
   )
 }
